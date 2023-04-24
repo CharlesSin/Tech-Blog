@@ -2,26 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.app {
+  max-width: 1400px;
+  margin: 5rem auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.app-posts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.loading-text,
+.error-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.error-text {
+  color: red;
+}
+
+.card {
+  /* width: 300px; */
+  width: calc(100% - 40px);
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  padding: 1rem;
+  /* margin-left: 1rem;
+  margin-bottom: 1rem; */
+  border-radius: 4px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-author {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  font-size: 0.9rem;
+}
+
+.pagination {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pagination button {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  padding: 7px 15px;
+}
+
+.pagination button:disabled {
+  background-color: #333;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.pageLink {
+  cursor: pointer;
+}
+
+/* pagination pageItem */
+.pageItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 8px;
+}
+
+/* pagination page item when active */
+.pageItemActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: rgba(79, 70, 229, 1);
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://techblog-beta.vercel.app/sitemap.xml

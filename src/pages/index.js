@@ -4,8 +4,8 @@ import axios from "axios";
 import VerticalCard from "../components/VerticalCard.js";
 import Navbar from "../components/Navbar.js";
 
-// const deploy_server_url = "http://localhost:3000";
-const deploy_server_url = "https://techblog-beta.vercel.app";
+const deploy_server_url = "http://localhost:3000";
+// const deploy_server_url = "https://techblog-beta.vercel.app";
 
 export default function Home(props) {
   return (
@@ -17,7 +17,7 @@ export default function Home(props) {
 
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {props.posts.map((post) => (
-              <VerticalCard className="shadow-black" key={post._id} post={post} />
+              <VerticalCard key={post._id} post={post} />
             ))}
           </div>
         </div>

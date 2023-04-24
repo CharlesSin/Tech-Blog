@@ -2,14 +2,14 @@ import Post from "../../../../models/Post";
 import dbConnect from "../../../../utils/dbConnect";
 
 export default async (req, res) => {
-  const { method, url } = req;
+  const { method } = req;
 
   // Connect to database
   await dbConnect();
 
   if (method === "GET") {
     try {
-      let query = Post.find();
+      let query = Post.find({});
 
       const page = parseInt(req.query.page) || 1;
       const pageSize = parseInt(req.query.limit) || 10;

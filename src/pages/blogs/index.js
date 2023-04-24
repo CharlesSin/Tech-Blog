@@ -5,11 +5,12 @@ import Card from "@/components/Card.js";
 import Pagination from "@/components/Pagination";
 import Navbar from "@/components/Navbar";
 
-const deploy_server_url = "http://localhost:3000";
+// const deploy_server_url = "http://localhost:3000";
+const deploy_server_url = "https://techblog-beta.vercel.app";
 
 export default function blog(props) {
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 4;
+  const pageSize = 20;
 
   const onPageChange = (page) => {
     setCurrentPage(page);

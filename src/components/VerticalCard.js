@@ -1,7 +1,7 @@
 const VerticalCard = ({ post }) => {
   return (
     <div key={post._id} className="group relative cursor-pointer">
-      <div className="min-h-50 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-50">
+      <div className="hidden min-h-50 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-50">
         <img src="https://img.icons8.com/ios-filled/50/null/no-image.png" alt="blank" className="object-fill h-full w-full object-cover object-center lg:h-full lg:w-full" />
       </div>
       <div className="mt-4 flex justify-between">

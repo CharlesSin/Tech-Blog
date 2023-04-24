@@ -19,14 +19,14 @@ export default function App({ Component, pageProps }) {
         <meta name="robots" content="all, max-image-preview:large" />
         <meta name="og:title" property="og:title" content="Here memorize alot tech post, roadmap and skill." />
         <meta name="og:type" property="og:type" content="article" />
-        <meta name="og:url" property="og:url" content="https://techblog-beta.vercel.app/" />
-        <meta name="og:image" property="og:image" content="https://techblog-beta.vercel.app/" />
+        <meta name="og:url" property="og:url" content="https://tech-blog-charlessin.vercel.app/" />
+        <meta name="og:image" property="og:image" content="https://tech-blog-charlessin.vercel.app/" />
 
         <meta name="google-site-verification" content="eP82dEE--Mtf-ypVN9QO-B9kd-C5uLVNT_Ce_bdha24" />
 
         <meta name="robots" content="all" />
 
-        <link rel="canonical" href="https://techblog-beta.vercel.app/" />
+        <link rel="canonical" href="https://tech-blog-charlessin.vercel.app/" />
       </Head>
       <Component {...pageProps} />
     </div>

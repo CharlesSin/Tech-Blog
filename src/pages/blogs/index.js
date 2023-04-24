@@ -6,7 +6,7 @@ import Pagination from "@/components/Pagination";
 import Navbar from "@/components/Navbar";
 
 // const deploy_server_url = "http://localhost:3000";
-const deploy_server_url = "https://techblog-beta.vercel.app";
+const deploy_server_url = "https://tech-blog-charlessin.vercel.app/";
 
 export default function Blog(props) {
   const [currentPage, setCurrentPage] = useState(1);

@@ -5,7 +5,7 @@ import VerticalCard from "../components/VerticalCard.js";
 import Navbar from "../components/Navbar.js";
 
 // const deploy_server_url = "http://localhost:3000";
-const deploy_server_url = "https://techblog-beta.vercel.app";
+const deploy_server_url = "https://tech-blog-charlessin.vercel.app/";
 
 export default function Home(props) {
   return (

@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
         <title>查尔斯技术笔记</title>
 
         <meta charSet="UTF-8" />
-        <meta name="description" content="Here memorize alot tech post, roadmap and skill." />
+        <meta name="description" content="查尔斯技术笔记，在这里记录很多技术帖子和技能" />
         <meta name="keywords" content="查尔斯技术笔记, 技术, 技术帖子, React, Javascript, React-Native, Docker, Nodejs" />
         <meta name="author" content="Charles_Sin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -27,7 +27,7 @@ export default function Blog(props) {
     <main className={`flex min-h-screen flex-col items-center justify-between`}>
       <>
         <Navbar active={"Blogs"} />
-        <div className="app-posts">
+        <div className="app-posts p-6 w-full">
           {paginatedPosts.map((post) => (
             <Card key={post._id} post={post} />
           ))}

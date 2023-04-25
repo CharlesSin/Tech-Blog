@@ -12,7 +12,7 @@ const VerticalCard = ({ post }) => {
               {post.title}
             </a>
           </h3>
-          <p className="mt-2 text-sm font-smal text-gray-900 text-ellipsis overflow-hidden">{post.desc}</p>
+          <h5 className="mt-2 text-sm font-smal text-gray-900 text-ellipsis overflow-hidden">{post.desc}</h5>
           <p className="mt-2 text-sm font-medium text-gray-900">{post.createdAt}</p>
         </div>
       </div>

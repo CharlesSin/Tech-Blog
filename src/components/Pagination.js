@@ -5,38 +5,40 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
   const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
 
   return (
-    <div>
-      <ul className="pagination">
-        <li key="previous" className="pageItem">
-          <a className="pageLink" onClick={() => onPageChange(currentPage - 1)}>
-            <span className="sr-only">Previous</span>
-            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path
-                fillRule="evenodd"
-                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                clipRule="evenodd"></path>
-            </svg>
-          </a>
-        </li>
-        {pages.map((page) => (
-          <li key={page} className={page === currentPage ? "pageItemActive" : "pageItem"}>
-            <a className="pageLink" onClick={() => onPageChange(page)}>
+    <div class="grid justify-items-end w-full py-2 px-8">
+      <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+        <a
+          className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 w-24 "
+          onClick={() => onPageChange(currentPage - 1)}> 
+          <span className="sr-only">Previous</span>
+          <span className="m-auto">Previous</span>
+          <svg className="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path
+              fillRule="evenodd"
+              d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+              clipRule="evenodd"></path>
+          </svg>
+        </a>
+        {/* {pages.map((page, index) => (
+          <li key={page} className={page === currentPage ? "hidden pageItemActive" : "hidden pageItem"}>
+            <a className="pageLink hidden" onClick={() => onPageChange(page)}>
               {page}
             </a>
           </li>
-        ))}
-        <li key="next" className="pageItem">
-          <a className="pageLink" onClick={() => onPageChange(currentPage + 1)}>
-            <span className="sr-only">Next</span>
-            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                clipRule="evenodd"></path>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        ))} */}
+        <a
+          className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 w-24"
+          onClick={() => onPageChange(currentPage + 1)}>
+          <span className="sr-only">Next</span>
+          <span className="m-auto">Next</span>
+          <svg className="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path
+              fillRule="evenodd"
+              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+              clipRule="evenodd"></path>
+          </svg>
+        </a>
+      </nav>
     </div>
   );
 };

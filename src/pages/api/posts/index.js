@@ -9,7 +9,7 @@ export default async (req, res) => {
 
   if (method === "GET") {
     try {
-      let query = Post.find({});
+      let query = Post.find({}).sort({ createdAt: -1 });
 
       const page = parseInt(req.query.page) || 1;
       const pageSize = parseInt(req.query.limit) || 10;

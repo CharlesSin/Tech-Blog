@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: https://tech-blog-charlessin.vercel.app/sitemap.xml
+sitemap: https://tech-blog-gules.vercel.app/sitemap.xml
